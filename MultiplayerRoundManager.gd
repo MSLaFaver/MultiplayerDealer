@@ -57,7 +57,7 @@ func sendBruteforce(roundType, liveCount, blankCount, d, p, s):
 			else: option = Bruteforce.OPTION_SHOOT_OTHER
 		else:
 			print("bruteforce successful")
-	action = Bruteforce.OPTION_SHOOT_SELF #option
+	action = option
 	manager.connectToMaster()
 	manager.thinking = false
 
