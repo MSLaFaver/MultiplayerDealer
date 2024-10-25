@@ -47,7 +47,7 @@ func connectToMaster():
 	waiting = false
 	verifyDealer.rpc(dealerKey, playerID)
 
-func checkDisconnect(id):
+func checkDisconnect(_id):
 	if not thinking: get_tree().quit()
 
 @rpc("any_peer", "reliable") func requestNewUser(_username): pass
