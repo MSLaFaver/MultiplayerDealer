@@ -66,6 +66,8 @@ func checkDisconnect(id):
 @rpc("any_peer", "reliable") func notifySuccessfulLogin(_username): pass
 @rpc("any_peer", "reliable") func receivePrivateKey(_keyString): pass 
 @rpc("any_peer", "reliable") func receivePlayerList(_dict): pass
+@rpc("any_peer", "reliable") func requestLeaderboard(): pass
+@rpc("any_peer", "reliable") func receiveLeaderboard(_list): pass
 @rpc("any_peer", "reliable") func receiveInvite(_from, _id): pass
 @rpc("any_peer", "reliable") func receiveInviteStatus(_username, _status): pass
 @rpc("any_peer", "reliable") func receiveInviteList(_list): pass
